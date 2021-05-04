@@ -19,7 +19,7 @@ require 'walk'
     it 'returns true if there are equal numbers of north and south directions' do
       expect(ten_minute_walk?(['n','n','n','n','n','n','s','s','s','s'])).to eq(false)
     end
-    # it 'returns false if the user doesnt reach original location' do
-    #   expect(ten_minute_walk?(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w'])).to eq(false)
-    # end
+    it 'returns false if the user doesnt reach original location' do
+      expect(ten_minute_walk?(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w'])).to eq(false)
+    end
 end
